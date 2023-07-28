@@ -1,9 +1,11 @@
-# file for our environment variables:
-snow.env
+# file for our variables:
+main.auto.tfvars
+# file for some notes:
+.commands_used.txt
 
 
 # .terraform folder is where all provider and modules depenencies are downloaded.
-#   There is nothing important in this folder and it is safe to delete if needed:
+#   There is nothing important in this folder and it is safe to delete if needed.
 
 # do NOT delete state files
 #      This is how Terraform knows the state of the resources it is managing.
