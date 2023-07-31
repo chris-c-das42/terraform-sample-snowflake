@@ -21,7 +21,7 @@ Run the following query in a Snowflake worksheet to get the information you will
 
             , current_region() as YOUR_SNOWFLAKE_REGION_ID;
 
-    Format your results from the query above according to this [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#non-vps-account-locator-formats-by-cloud-platform-and-region)
+Format your results from the query above according to this [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#non-vps-account-locator-formats-by-cloud-platform-and-region)
 
 ### Common Terraform commands
 Once you've successfully run through "New User Setup" (above), here are some helpful commands for initializing, planning, etc. with Terraform
