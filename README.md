@@ -1,5 +1,5 @@
 # Terraform Sample -- Snowflake
-This project is meant to be a sample of how one can use Terraform to create, update, and delete resources and necessary in a Snowflake environment.
+This project is meant to be a sample of how one can use Terraform to create, update, and delete resources as necessary in a Snowflake environment.
 
 ### New user setup
 1. [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
