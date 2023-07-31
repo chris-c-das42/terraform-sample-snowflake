@@ -1,5 +1,5 @@
 # Terraform Sample -- Snowflake
-This project is meant to be a sample of how one can use Terraform to create, update, and delete resources and necessary in a Snowflake environment.
+This project is meant to be a sample of how one can use Terraform to create, update, and delete resources as necessary in a Snowflake environment.
 
 ### New user setup
 1. [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
@@ -21,7 +21,7 @@ Run the following query in a Snowflake worksheet to get the information you will
 
             , current_region() as YOUR_SNOWFLAKE_REGION_ID;
 
-    Format your results from the query above according to this [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#non-vps-account-locator-formats-by-cloud-platform-and-region)
+Format your results from the query above according to this [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#non-vps-account-locator-formats-by-cloud-platform-and-region)
 
 ### Common Terraform commands
 Once you've successfully run through "New User Setup" (above), here are some helpful commands for initializing, planning, etc. with Terraform
