@@ -6,20 +6,22 @@ This project is meant to be a sample of how one can use Terraform to create, upd
 2. Clone this repository, and work with it locally, or copy it to a new GitHub repository
 3. Create a Snowflake account, or otherwise make sure you have a Snowflake account with ACCOUNTADMIN role
     - Ie an account you're certain you can freely manage (create, alter, drop) all resources
-4. Create a Service User in your Snowflake account; necessary for Terraform to interact with Snowflake.  Directions here:
-https://quickstarts.snowflake.com/guide/terraforming_snowflake/index.html?index=..%2F..index#2
+4. Create a Service User in your Snowflake account; necessary for Terraform to interact with Snowflake.  [Directions](https://quickstarts.snowflake.com/guide/terraforming_snowflake/index.html?index=..%2F..index#2)
 5. Grab Snowflake account, region information (outlined below in Account Locator Information)
 6. Be sure to update the [variables file](snowflake_objects/variables.tf) file as necessary with your account, region information
 
 ### Account Locator information
 The Snowflake_Account variable is the Account Locator, which is more than just your account.  Here is how to find it:
+
 Run the following query in a Snowflake worksheet to get the information you will need:
+
         SELECT 
+
             current_account() as YOUR_ACCOUNT_LOCATOR
-            , current_region() as YOUR_SNOWFLAKE_REGION_ID
-        ;
-    Format your results from the query above according to this Snowflake documentation:
-        https://docs.snowflake.com/en/user-guide/admin-account-identifier#non-vps-account-locator-formats-by-cloud-platform-and-region
+
+            , current_region() as YOUR_SNOWFLAKE_REGION_ID;
+
+    Format your results from the query above according to this [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#non-vps-account-locator-formats-by-cloud-platform-and-region)
 
 ### Common Terraform commands
 Once you've successfully run through "New User Setup" (above), here are some helpful commands for initializing, planning, etc. with Terraform
